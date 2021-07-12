@@ -1,0 +1,58 @@
+@font-face {font-family: 'Nimbus'; src: url('fonts/Nimbus.woff');}
+
+*{
+  font-family: 'Nimbus';
+  text-align: center;
+}
+
+body{
+  background: url(imgs/404fondo.png);
+  background-size: cover;
+  animation-name: fondo;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes fondo {
+  from{background-position: 0px 0px;}
+  to{background-position: 0px 2160px;}
+}
+
+.content{
+  background-color: white;
+}
+
+.titulo{
+  margin-top: 180px;
+  font-size: 120px;
+  text-shadow: 2px 2px #07e3c6;
+}
+
+.subtitulo{
+  font-size: 25px;
+}
+
+.texto{
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.pacasita{
+  font-size: 15px;
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.pacasita>a{
+  background-color: white;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  border-bottom-color: #07e3c6;
+  border-right-color: #07e3c6;
+}
