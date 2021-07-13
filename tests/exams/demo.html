@@ -65,6 +65,10 @@
         <p id="marks"></p>
         <p id="marks2"></p>
         <input type="button" value="Check all" onclick="final()">
+
+
+
+
       <script>
         let marks = 0;
         let maxmarks = 20;
@@ -76,7 +80,7 @@
             return 0;
           }
           else{
-            if (document.getElementById('q' + sub).value == ans){
+            if (document.getElementById('q' + sub).value.toLowerCase() == ans){
               document.getElementById('b' + sub).style.display = "block";
               document.getElementById('r' + sub).innerHTML = '';
               marks = marks + mar;
@@ -95,7 +99,7 @@
           var select;
           select = document.getElementById('q' + sub);
           var option;
-          option = select.options[select.selectedIndex].innerHTML;
+          option = select.options[select.selectedIndex].innerHTML.toLowerCase();
           if (document.getElementById('r' + sub).innerHTML != "[.]"){
 
             return 0;
