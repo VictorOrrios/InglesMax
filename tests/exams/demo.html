@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="../../imgs/favicon.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <title>Inglesupersimple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="../../en/home.html"><img src="../../imgs/logo.png" id="logo"></a></div>
+      <div class="banner"><a href="../../en/home.html"><img src="../../imgs/header.png" id="banner"></a></div>
+
+      <div class="navbar">
+        <a href="../../en/home.html"><b>Home</b></a>
+        <a href="../../courses/index.html"><b>Courses</b></a>
+        <a href="../../docs/index.html"><b>Documents</b></a>
+        <a href="../../tests/index.html"><b>Tests</b></a>
+        <a href="../../user/config.html"><b>User</b></a>
+      </div>
+    </header>
+      <h2>EXAM</h2>
+      <audio controls>
+        <source src="audio/demo.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <h2>Exercise 1 (10pt)</h2>
+
+      <div class="subindex">
+        Do you <input type="text" id="q1_1" name="q1_1"> to hang out.
+        <img src="../../imgs/check.png" id="b1_1" class="checkicon">
+        <img src="../../imgs/remove.png" id="m1_1" class="checkicon">
+
+        <div class="r" id="r1_1">[.]</div>
+        <input type="button" value="Check" onclick="check('want' , '1', '1', 10)">
+      </div>
+
+      <h2>Exercise 2 (10pt)</h2>
+
+      <div class="subindex">
+        We will be meeting
+        <select id="q2_1" name="q2_1">
+          <option value="-">-</option>
+          <option value="at">at</option>
+          <option value="when">when</option>
+          <option value="where">where</option>
+          <option value="an">an</option>
+        </select>
+         9:00 am.
+         <img src="../../imgs/check.png" id="b2_1" class="checkicon">
+         <img src="../../imgs/remove.png" id="m2_1" class="checkicon">
+
+         <div class="r" id="r2_1">[.]</div>
+         <input type="button" value="Check" onclick="checkdrop('at' , '2', '1', 10)">
+      </div>
+
+      <br>
+      <h1>FINAL MARKS</h1>
+        <p id="marks"></p>
+        <p id="marks2"></p>
+        <input type="button" value="Check all" onclick="final()">
+      <script>
+        let marks = 0;
+        let maxmarks = 20;
+        function check(ans, exe, apa, mar) {
+          let sub;
+          sub = exe + '_' + apa;
+          if (document.getElementById('r' + sub).innerHTML != "[.]"){
+
+            return 0;
+          }
+          else{
+            if (document.getElementById('q' + sub).value == ans){
+              document.getElementById('b' + sub).style.display = "block";
+              document.getElementById('r' + sub).innerHTML = '';
+              marks = marks + mar;
+              return 0;
+            }
+            else{
+              document.getElementById('m' + sub).style.display = "block";
+              document.getElementById('r' + sub).innerHTML = '[' + ans + ']';
+              return 0;
+            }
+          }
+        }
+        function checkdrop(ans, exe, apa, mar) {
+          let sub;
+          sub = exe + '_' + apa;
+          var select;
+          select = document.getElementById('q' + sub);
+          var option;
+          option = select.options[select.selectedIndex].innerHTML;
+          if (document.getElementById('r' + sub).innerHTML != "[.]"){
+
+            return 0;
+          }
+          else{
+            if (option == ans){
+              document.getElementById('b' + sub).style.display = "block";
+              document.getElementById('r' + sub).innerHTML = '';
+              marks = marks + mar;
+              return 0;
+            }
+            else{
+              document.getElementById('m' + sub).style.display = "block";
+              document.getElementById('r' + sub).innerHTML = '[' + ans + ']';
+              return 0;
+            }
+          }
+        }
+        function final() {
+          document.getElementById('marks').innerHTML = 'Your final score is: ' + marks + '/' + maxmarks;
+          let finalm = marks / maxmarks * 100
+
+          if (finalm == 100) {
+            document.getElementById('marks2').innerHTML = '💯 CONGRATULATIONS 💯'
+            return 0;
+          }
+          if (finalm > 49.999) {
+            document.getElementById('marks2').innerHTML = finalm + '% 🎉 You passed'
+            return 0;
+          }
+          if (finalm < 50) {
+            document.getElementById('marks2').innerHTML = finalm + '% 📘 You will need to Study'
+            return 0;
+          }
+        }
+      </script>
+  </body>
+</html>
