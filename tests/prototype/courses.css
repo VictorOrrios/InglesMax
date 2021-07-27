@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+body{
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+  margin-top: 35px;
+  color: #3d3d3d;
+  line-height: 200%;
+}
+
+header{
+  margin-left: 5px;
+}
+
+h1{
+  margin-bottom: 20px;
+  border-bottom: 5px solid LightBlue;
+  border-bottom-style: dotted;
+}
+
+h3{
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+ul{
+  padding-left: 30px;
+}
+
+span{
+  margin-left: 30px;
+}
+
+hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner{
+  width: 100%;
+  border-style: solid;
+  border-color: LightGray;
+  border-width: 0px 0px 1px 0px;
+  margin-bottom: 12px;
+}
+
+.navbar{
+  border-style: solid;
+  border-color: LightGray;
+  border-width: 0px 0px 1px 0px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.navbar > * {
+  text-decoration: none;
+  color: Black;
+  margin-right: 15px;
+}
+.navbar > a :hover{
+  color: LightBlue;
+}
+
+.main{
+  width: 100%;
+}
+
+.side{
+  font-size: 22px;
+  float: right;
+  width: 210px;
+  border-style: solid;
+  border-color: LightGray;
+  border-width: 3px;;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.side2{
+  display: none;
+  font-size: 22px;
+  float: right;
+  border-style: solid;
+  border-color: LightGray;
+  border-width: 3px;;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.logo{
+  display: none;
+  width: 100%;
+  border-style: solid;
+  border-color: LightGray;
+  border-width: 0px 0px 1px 0px;
+  margin-bottom: 12px;
+}
+
+.subindex{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.disclaimer{
+  font-size: 12px;
+}
+
+.grupo{
+  width: 100%;
+}
+
+.course{
+  float: left;
+  width: 200px;
+  padding: 20px;
+  border: solid LightBlue 2px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.price{
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  background-color: LightBlue;
+  border: solid LightBlue 5px;
+  border-radius: 12px;
+  width: 120px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.price:hover {
+  background-color: white;
+  color: LightBlue;
+}
+
+.price > *{
+  text-decoration: none;
+  color: black;
+}
+
+.maingroup{
+  margin-right: 30%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.testdirect{
+  text-decoration: none;
+  color: black;
+  border-left: 2px solid LightBlue;
+  padding-left: 5px;
+}
+
+.testdirect:hover{
+  color: LightBlue;
+  font-weight: bold;
+}
+
+.testvideo{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-left: 5px;
+  border-bottom: 2px solid LightBlue;
+}
+
+.testvideo:hover{
+  color: LightBlue;
+  font-weight: bold;
+}
+
+.spacer{
+  height: 700px;
+}
+
+.leveltest{
+    margin-top: -20px;
+    width: 70%;
+}
+
+.leveltest>*{
+  text-align: center;
+}
+
+.levelboton{
+  font-size: 18px;
+  border-bottom: 3px solid LightBlue;
+}
+
+.levelboton > a{
+  text-decoration: none;
+  color: Black;
+}
+.levelboton>a:hover{
+  color: LightBlue;
+}
+
+#eslink{
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+
+}
+#eslink:hover{
+  color: LightBlue;
+}
+
+#welcome{
+  font-size: 42px;
+  color: LightGray;
+}
+
+#encabezado{
+  margin-top: 36px;
+}
+#encabezado > * {
+  margin-bottom: 30px;
+}
+
+#bloque{
+  width: 50%;
+  margin-bottom: 70px;
+}
+#bloque > * {
+  margin-bottom: 25px;
+}
+
+#bloque2{
+  width: 50%;
+  float: right;
+}
+
+#bloque3{
+  width: 50%;
+  float: right;
+  font-size: 22px;
+}
+#bloque3 > * {
+  margin-bottom: 20px;
+}
+
+#banner{
+  width: 562px;
+}
+#bandera{
+  width: 25px;
+}
+#kid{
+  float: right;
+  width: 275px;
+}
+#foto{
+  width: 310px;
+}
+#icono{
+  width: 18px;
+}
+#bookmark{
+  width: 23px;
+  float: right;
+}
+
+@media only screen and (max-width: 768px) {
+  body{
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .main{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .side{
+    display: none;
+  }
+  .side2{
+    display: inline-block;
+    float: none;
+    margin-top: 50px;
+    font-size: 25px;
+    width: 400px;
+    margin-left: 145px;
+  }
+  .side2 > span {
+    float: left;
+    margin-left: 10px;
+  }
+
+  .maingroup{
+    margin-right: 0px;
+  }
+
+  .spacer{
+    height: 150px;
+  }
+
+  .leveltest{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  body{
+    margin-left: 20px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+  }
+
+  h1{
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .banner{
+    display: none;
+  }
+
+  .logo{
+    display: block;
+
+  }
+  .logo > a > img{
+    width: 250px;
+  }
+
+  .side2{
+    margin-top: 40px;
+    font-size: 22px;
+    width: 100%;
+    margin-left: -1px;
+    width: 230px;
+  }
+
+  .navbar > *{
+    margin-right: 5px;
+  }
+
+  .maingroup{
+    margin-top: -30px;
+    width: 300px;
+    column-gap: 15px;
+  }
+
+  .spacer{
+    display: none;
+  }
+
+  .leveltest{
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .levelboton{
+    font-size: 16px;
+  }
+
+  #dright{
+    right:0;
+  }
+
+  #bloque{
+    width: 100%;
+  }
+
+  #bloque2{
+    width: 100%;
+    float: none;
+  }
+
+  #bloque3{
+    width: 100%;
+    float: none;
+  }
+
+  #kid{
+    margin-bottom: 20px;
+  }
+
+  #foto{
+    margin-bottom: 20px;
+  }
+}
